@@ -10,7 +10,7 @@
     }
   ],
    "require": {
-    "php": "^7.0",
+    "php": "^8.5",
     "xprt64/types": "^1.0.0"
   },
   "autoload": {

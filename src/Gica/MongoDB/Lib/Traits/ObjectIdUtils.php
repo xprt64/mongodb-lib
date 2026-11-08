@@ -6,7 +6,6 @@
 namespace Gica\MongoDB\Lib\Traits;
 
 
-use Gica\Cqrs\Event\MetaData;
 use Gica\Types\Guid;
 use MongoDB\BSON\ObjectID;
 

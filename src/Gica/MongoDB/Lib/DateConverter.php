@@ -6,7 +6,7 @@
 namespace Gica\MongoDB\Lib;
 
 
-use Gica\ValueObject\DateTimeImmutable\NullDateTimeImmutable;
+use Gica\Types\DateTimeImmutable\NullDateTimeImmutable;
 use MongoDB\BSON\UTCDateTime;
 
 class DateConverter
@@ -16,7 +16,7 @@ class DateConverter
         return new UTCDateTime($dateTime->getTimestamp() * 1000);
     }
 
-    public static function toDateTimeImmutable(UTCDateTime $mongoDate = null):\DateTimeImmutable
+    public static function toDateTimeImmutable(?UTCDateTime $mongoDate = null):\DateTimeImmutable
     {
         if (!$mongoDate) {
             return new NullDateTimeImmutable();
